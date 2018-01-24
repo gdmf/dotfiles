@@ -1,0 +1,21 @@
+http://scoop.sh/
+
+> Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+> iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+> scoop install git
+> scoop install openssh
+> [environment]::setenvironmentvariable('GIT_SSH', (resolve-path (scoop which ssh)), 'USER')
+> scoop install nodejs
+> scoop install touch
+
+// console configuration
+> scoop install concfg
+> concfg import solarized small
+
+// git info and tab completion
+> scoop install pshazz
+
+// concfg customization
+// https://github.com/lukesampson/concfg
+> concfg import oceanicnext
+// consolas 16pt
